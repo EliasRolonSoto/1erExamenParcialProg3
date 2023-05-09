@@ -22,4 +22,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\DotnetExam.ConsoleApp\DotnetExam.ConsoleApp.csproj" />
+    <ProjectReference Include="..\..\src\DotnetExam.Entities\DotnetExam.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

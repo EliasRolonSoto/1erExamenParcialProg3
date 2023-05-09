@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DotnetExam.Entities
 {
-    public static class MateriaGenerador
+    public class MateriaGenerador : Materia
     {
-        public static List<Materia> Generar(int cantidad, int alumnosPorMateria) {
+        public static Queue<Materia> Generar(int cantidad, int alumnosPorMateria) {
 
-            var materias = new List<Materia>();
+            var materias = new Queue<Materia>();
 
             for (int i = 1; i <= cantidad; i++)
             {
@@ -32,7 +32,7 @@ namespace DotnetExam.Entities
                 }
                
 
-                materias.Add(materia);
+                materias.Enqueue(materia);
 
                 
             }
